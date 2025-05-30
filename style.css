@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('./assets/norse-bold-webfont.woff2') format('woff2'),
+         url('./assets/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.mainDiv{
+    max-width: 50vw;
+   background-image: url('./assets/image.jpg');
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+
+    
+}
+.nyts{
+    align-self: center;
+    font-family: 'norsebold';
+    font-size: 45px;
+    opacity: 1;
+}
+.sidebar{
+    width: 25vw;
+    background-color: black;
+}
+
+.logo{
+    flex: 1;
+   align-self: center;
+
+}
+.formArea{
+    flex: 2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+.logoarea{
+    background-color: rgb(0 0 0 / 50%);;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 250px;
+    
+}
+
+img
+{
+    opacity: 1;
+}
+
+
+.formDiv{
+    flex:9;
+    z-index: 2;
+    box-shadow:0px 1px 3px gray;
+    background-color: whitesmoke;
+}
+.textDiv > h1{
+    font: 3em 'norsebold';
+    margin-top: 0px;
+}
+
+.textDiv > h6{
+    margin: 0 20px;
+    font-family: sans-serif;
+}
+.createAcc{
+    border-radius: 4px;
+    background-color: #e35704;
+    border: none;
+    padding: 7px 30px;
+    color: white;
+}
+
+.textDiv{
+    flex: 10;
+    background-color: #f9fafb;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textDiv2{
+    flex: 10;
+    background-color: #f9fafb;
+    z-index: 1;
+    
+}
+.textDiv2>div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 0.8rem;
+}
+a{
+    text-decoration: none;
+    color:#e35704 ;   
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap:4vw;
+    row-gap: 30px;
+    margin: 20px;
+   
+}
+label{
+   font-family: Verdana;
+   font-size: 0.6rem;
+   
+}
+form > div{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+input{
+    border: 1px solid #E5E7EB;
+    border-radius: 2px;
+}
+input:focus{
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 1px 1px 1px black;
+}
+input[type="password"]:invalid{
+  border: 1px solid red;
+  outline: none;
+}
